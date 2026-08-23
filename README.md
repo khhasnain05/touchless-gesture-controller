@@ -2,10 +2,14 @@
 
 An advanced, deep learning-powered Human-Computer Interaction (HCI) desktop application that enables touchless control of media playback, presentation navigation, and system volume using webcam hand gesture recognition.
 
-![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10-green.svg)
 ![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blueviolet.svg)
+
+</div>
 
 ---
 
@@ -45,8 +49,8 @@ ai-air-mouse/
 │   ├── phase3_rule_gestures.py
 │   ├── phase4_dataset_collector.py
 │   ├── verify_dataset.py
-│   ├── preprocess_dataset.py
-│   ├── touchless_controller.py
+│   ├── phase5_preprocess_dataset.py
+│   ├── phase6_touchless_controller.py
 │   └── app_gui.py             # Main Desktop Application
 ├── requirements.txt
 └── README.md
@@ -59,7 +63,7 @@ ai-air-mouse/
 **1. Clone & Setup Environment**
 
 ```bash
-git clone [https://github.com/khhasnain05/ai-air-mouse.git](https://github.com/khhasnain05/ai-air-mouse.git)
+git clone https://github.com/khhasnain05/ai-air-mouse.git
 cd ai-air-mouse
 python -m venv venv
 venv\Scripts\activate
@@ -74,11 +78,15 @@ python src/app_gui.py
 
 ---
 
-## 🖐️ Gesture Command Reference
+## 🖐️ Gesture Quick Reference
 
-* **✋ idle** : System Standby / Rest
-* **👌 left_click** : Play / Pause Media (Spacebar)
-* **👉 point** : Next Slide / Skip Track (Right Arrow)
-* **✌️ right_click** : Previous Slide / Rewind Track (Left Arrow)
-* **⬆️ ✌️ scroll_up** : Volume Up (+5%)
-* **⬇️ ✌️ scroll_down** : Volume Down (-5%)
+| Gesture | Hand Pose | Action |
+| :--- | :--- | :--- |
+| ✋ **`idle`** | Open Palm | **Standby / Rest** (No action) |
+| 👌 **`left_click`** | Index + Thumb Pinch | **Play / Pause Media** (Spacebar) |
+| 👉 **`point`** | Index Pointing | **Next Slide / Skip 5s** (Right Arrow) |
+| ✌️ **`right_click`** | Middle + Thumb Pinch | **Previous Slide / Rewind 5s** (Left Arrow) |
+| ⬆️ **`scroll_up`** | Peace Sign (Upper Screen) | **Volume Up** (+5%) |
+| ⬇️ **`scroll_down`** | Peace Sign (Lower Screen) | **Volume Down** (-5%) |
+
+> **Note:** Show an Open Palm (✋) briefly between gestures to reset the trigger cleanly.
