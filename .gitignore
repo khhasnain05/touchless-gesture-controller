@@ -1,0 +1,12 @@
+# Python Environment
+venv/
+__pycache__/
+*.pyc
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Large raw camera dumps (if any)
+*.mp4
+*.avi
