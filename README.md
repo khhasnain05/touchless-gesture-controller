@@ -63,8 +63,8 @@ ai-air-mouse/
 **1. Clone & Setup Environment**
 
 ```bash
-git clone https://github.com/khhasnain05/ai-air-mouse.git
-cd ai-air-mouse
+git clone https://github.com/khhasnain05/touchless-gesture-controller.git
+cd touchless-gesture-controller
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
