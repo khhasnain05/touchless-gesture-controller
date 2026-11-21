@@ -72,7 +72,7 @@ class ModernTouchlessApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("AI Touchless Control Center - MITACS Research Dashboard")
+        self.title("Touchless Control Center - AI Gesture Recognition")
         self.geometry("1000 x 650")
         self.configure(fg_color="#0f172a") # Slate Dark Background
         self.resizable(False, False)
